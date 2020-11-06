@@ -1,5 +1,5 @@
 class Student < ActiveRecord::Base 
-  def full_name
+  def to_s
     "#{self.first_name.to_s} #{self.last_name.to_s}" 
   end 
 end
